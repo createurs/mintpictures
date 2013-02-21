@@ -1,0 +1,104 @@
+/* Hide the default theme stuff we don't want to see.*/
+#header-below,#role-credits {
+  display: none;
+}
+
+#top-nav ul {
+  float: none;
+  position: absolute;
+  bottom: 30px;
+  right: -10px;
+}
+
+/* Header section overrides */
+
+.site-title {
+  width: 214px;
+}
+
+.menu {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+#top-nav {
+  font-size: 18px;
+}
+
+#top-nav ul {
+  background: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+#top-nav ul::before,
+#top-nav ul::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #b1c79f;
+  width: 100%;
+  height: 1px;
+}
+
+#top-nav ul::before {
+  top: -2px;
+}
+
+#top-nav ul::after {
+  bottom: -2px;
+}
+
+#top-nav ul li {
+  border: none;
+}
+
+#top-nav ul li a {
+  color: #666;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#top-nav li:hover,
+#top-nav ul li a:hover,
+#top-nav .current_page_item a {
+  background: none !important;
+  background: none !important;
+  color: #634a39;
+}
+
+/* Main content block */
+
+#main-container {
+  position: relative;
+}
+
+#main-container::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 500px;
+  top: -210px;
+  left: auto;
+  right: auto;
+  z-index: -1;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 70%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+
+  #header-below {
+    display: block;
+  }
+
+}
