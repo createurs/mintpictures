@@ -23,6 +23,10 @@ Gray: #cad0cf
   display: none;
 }
 
+#entry-container .entry-meta {
+  display: none;
+}
+
 .category-clients.has-sidebar #main #content,
 .category-clients.has-sidebar #main #content #entry-container,
 .category-testimonials.has-sidebar #main #content,
@@ -80,7 +84,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 h2 {
@@ -219,7 +223,7 @@ form .button, #footer, #site-info, #top-search input#s:focus, .flex-caption, .li
 }
 
 .site-title {
-  width: 214px;
+  width: 174px;
 }
 
 #site-info {
