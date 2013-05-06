@@ -318,8 +318,8 @@ form .button, #footer, #site-info, #top-search input#s:focus, .flex-caption, .li
 
 #hero .light-on-dark .entry-content {
 	position: absolute!important;
-	bottom: -40px!important;
-	left: -40px!important;
+	top: 240px;
+	left: 0!important;
 	background: none;
 	background-color: rgba(0,0,0,0.8);
 	-moz-border-radius: 0;
@@ -520,6 +520,14 @@ form .button, #footer, #site-info, #top-search input#s:focus, .flex-caption, .li
 	#main {
 		background: none;
 	}
+	
+	#hero .light-on-dark .entry-content {
+		top: 190px;
+	}
+	
+	#hero .entry-content .entry-header h2 {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -528,7 +536,7 @@ form .button, #footer, #site-info, #top-search input#s:focus, .flex-caption, .li
 	}
 	
 	#header-above,
-	  #header-below {
+					  #header-below {
 		margin: 0 auto;
 	}
 	
